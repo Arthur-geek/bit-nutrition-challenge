@@ -7,6 +7,7 @@ import WhyApply from "@/components/sections/WhyApply";
 import Proof from "@/components/sections/Proof";
 import Partners from "@/components/sections/Partners";
 import Apply from "@/components/sections/Apply";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Proof />
       <Partners />
       <Apply />
+      <Analytics />
     </main>
   );
 }
