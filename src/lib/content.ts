@@ -113,7 +113,7 @@ export const eligibility: EligibilityContent = {
   ],
 };
 
-export const applyFormUrl = "https://forms.google.com/id";
+export const applyFormUrl = "https://forms.gle/DeNNbnGox2ppf82e8";
 
 export const footerLinks: FooterLinkGroup[] = [
   {

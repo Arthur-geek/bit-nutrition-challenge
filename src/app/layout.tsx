@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     images: ["/assets/clbs.jpg"],
     type: "website",
   },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   metadataBase: new URL("https://bit.bf"),
 };
 
@@ -42,6 +47,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${bebasNeue.variable} ${inter.variable} no-js`}>
+      <head>
+      
+      </head>
       <body>
         <Header />
         {children}
