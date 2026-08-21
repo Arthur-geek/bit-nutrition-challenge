@@ -2,6 +2,7 @@ import Image from "next/image";
 import { footerLinks } from "@/lib/content";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer>
       <div className="wrap">
@@ -35,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 Burkina Institute of Technology</span>
+          <span>© {currentYear} Burkina Institute of Technology</span>
           <span>Project Prana Foundation · Cambridge, MA · 501(c)(3)</span>
         </div>
       </div>
