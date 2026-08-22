@@ -74,7 +74,7 @@ header.nav{
   transition:background .4s, backdrop-filter .4s, padding .4s, box-shadow .4s;
 }
 header.nav.scrolled{background:#ffffffee; backdrop-filter:blur(10px); padding-top:var(--s12); padding-bottom:var(--s12); box-shadow:0 1px 0 var(--border);}
-.logo-mark img{height:30px !important; width:auto !important; transition:filter .4s;}
+.logo-mark img{width:52px !important; height:30px !important; transition:filter .4s;}
 header.nav:not(.scrolled) .logo-mark img{filter:brightness(0) invert(1);}
 nav.links{display:flex; gap:var(--s32); font-size:14px; font-weight:500;}
 nav.links a{opacity:.8; transition:opacity .25s, color .25s; color:#fff;}
@@ -302,13 +302,7 @@ footer{padding:var(--s48) 0 var(--s32); border-top:1px solid var(--border);}
   .footer-bottom{flex-direction:column; gap:var(--s8); text-align:left;}
 }
 
-/* ===== SCROLL REVEAL MARKER CLASSES =====
-   These classes are pure JS hooks — ScrollAnimations.tsx (or the section's
-   own effect) sets the hidden starting state itself via gsap.fromTo() and
-   animates it in. They intentionally carry NO default CSS opacity/transform
-   here: if GSAP is ever slow to load, blocked, or errors out, content stays
-   at its natural, fully visible state instead of being stuck invisible —
-   the animation is progressive enhancement, never a hard dependency. */
+/* ===== SCROLL REVEAL MARKER CLASSES ===== */
 .fade-up, .reveal-left, .reveal-right{will-change:transform, opacity;}
 
 
